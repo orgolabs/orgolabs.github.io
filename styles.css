@@ -9,9 +9,9 @@
   --ink: #16211b;
   --ink-soft: #5c685f;
   --line: #e2dccd;
-  --accent: #0b9d63;
-  --accent-deep: #0a7a4d;
-  --teal: #0d8f86;
+  --accent: #0c7a4e;
+  --accent-deep: #075c3a;
+  --teal: #0b6f68;
   --on-dark: #f4f1e9;
   --maxw: 1080px;
   --display: "Fraunces", Georgia, "Times New Roman", serif;
@@ -27,9 +27,9 @@
     --ink: #e9efe7;
     --ink-soft: #94a39a;
     --line: #1e2c26;
-    --accent: #34d399;
-    --accent-deep: #6ee7b7;
-    --teal: #2dd4bf;
+    --accent: #58bf9b;
+    --accent-deep: #8ad8c0;
+    --teal: #4bbfae;
     --on-dark: #e9efe7;
     --shadow: 0 18px 44px -26px rgba(0,0,0,.8);
   }
@@ -109,8 +109,8 @@ section { padding: clamp(56px, 9vw, 104px) 0; }
 .lab .kicker { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-deep); margin: 0 0 10px; }
 .lab h3 { font-family: var(--display); font-weight: 600; font-size: 1.55rem; letter-spacing: -0.015em; margin: 0 0 10px; }
 .lab p { color: var(--ink-soft); margin: 0 0 18px; font-size: 0.98rem; }
-.rxn { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86rem; color: var(--ink);
-  background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 13px; margin: 0 0 20px; overflow-x: auto; white-space: nowrap; }
+.rxn { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.82rem; color: var(--ink); line-height: 1.7;
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 13px; margin: 0 0 20px; white-space: normal; }
 .rxn b { color: var(--accent-deep); font-weight: 600; }
 .enter { margin-top: auto; font-weight: 600; color: var(--accent-deep); display: inline-flex; align-items: center; gap: 7px; }
 .lab:hover .enter .arr { transform: translateX(3px); }
