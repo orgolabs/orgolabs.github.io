@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orgolabs — organic chemistry labs you can rotate</title>
+  <meta name="description" content="orgolabs builds interactive, fact-checked walkthroughs of classic organic syntheses: real 3D molecular structures from PubChem, the actual laboratory procedure, the mechanism, and a live yield calculator." />
+  <link rel="icon" href="https://orgolabs.github.io/shared/brand/orgolabs-icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="orgolabs — organic chemistry labs you can rotate" />
+  <meta property="og:description" content="Interactive, fact-checked walkthroughs of classic organic syntheses — real 3D structures, the real procedure, the mechanism." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://orgolabs.github.io/" />
+</head>
+<body>
+  <a class="skip" href="#labs">Skip to the labs</a>
+
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="https://orgolabs.github.io/" aria-label="orgolabs home">
+        <img src="https://orgolabs.github.io/shared/brand/orgolabs-icon.svg" alt="" />
+        <b>orgo<span>labs</span></b>
+      </a>
+      <nav class="nav">
+        <a href="#labs">Labs</a>
+        <a href="#method">How it's built</a>
+        <a class="ghost" href="https://github.com/orgolabs" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <svg class="hero-art" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <!-- molecular line-art motif: fused aromatic rings, drawn thin -->
+      <g fill="none" stroke="currentColor" stroke-width="2.5">
+        <!-- a benzene ring template repeated by hand at a few positions/scales -->
+        <g transform="translate(905,70) scale(1.15)">
+          <polygon points="60,0 104,25 104,75 60,100 16,75 16,25"/>
+          <circle cx="60" cy="50" r="27" stroke-width="2"/>
+          <polygon points="104,25 148,0 192,25 192,75 148,100 104,75"/>
+          <circle cx="148" cy="50" r="27" stroke-width="2"/>
+          <polygon points="60,100 104,125 104,175 60,200 16,175 16,125"/>
+          <circle cx="60" cy="150" r="27" stroke-width="2"/>
+          <line x1="60" y1="100" x2="60" y2="123"/>
+          <line x1="192" y1="50" x2="222" y2="50"/>
+        </g>
+        <g transform="translate(70,300) scale(0.9) rotate(12)">
+          <polygon points="60,0 104,25 104,75 60,100 16,75 16,25"/>
+          <circle cx="60" cy="50" r="27" stroke-width="2"/>
+          <line x1="16" y1="25" x2="-14" y2="8"/>
+          <line x1="16" y1="75" x2="-14" y2="92"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="wrap">
+      <p class="eyebrow">Open organic-chemistry labs</p>
+      <h1 class="display">Every reaction, in&nbsp;real <em>3D</em>.</h1>
+      <p class="lede">
+        Interactive, fact-checked walkthroughs of classic organic syntheses — the actual 3D molecules from
+        PubChem you can turn over in your hands, the real laboratory procedure, the mechanism behind it, and a
+        live yield calculator. Built to learn from, not to skim.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#labs">Explore the labs <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="https://github.com/orgolabs" target="_blank" rel="noopener">View the source</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="labs" class="wrap">
+    <div class="section-head">
+      <h2>The labs</h2>
+      <span class="count">02 — and counting</span>
+    </div>
+    <div class="labs-grid">
+      <a class="lab" href="https://orgolabs.github.io/camphor-reduction/">
+        <p class="kicker">Diastereoselective reduction</p>
+        <h3>Reduction of Camphor</h3>
+        <p>Sodium borohydride turns a rigid bicyclic ketone into isoborneol and borneol — the textbook case of
+          <em>steric approach control</em>. Rotate all three, watch the gem-dimethyl bridge do the work.</p>
+        <div class="rxn">C₁₀H₁₆O &nbsp;<b>— NaBH₄ →</b>&nbsp; isoborneol + borneol &nbsp;(C₁₀H₁₈O)</div>
+        <span class="enter">Enter the lab <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="lab" href="https://orgolabs.github.io/aspirin-synthesis/">
+        <p class="kicker">Esterification · multistep</p>
+        <h3>Synthesis of Aspirin</h3>
+        <p>Acetylate the phenol of salicylic acid with acetic anhydride — the two-step route from oil of
+          wintergreen, proven by the FTIR fingerprint. Based on the Olmsted (1998) experiment.</p>
+        <div class="rxn">C₇H₆O₃ + (CH₃CO)₂O &nbsp;<b>— H₃PO₄ →</b>&nbsp; aspirin &nbsp;(C₉H₈O₄)</div>
+        <span class="enter">Enter the lab <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="method" class="method">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How these are built</h2>
+        <span class="count">no hand-waving</span>
+      </div>
+      <div class="method-grid">
+        <div class="m-item">
+          <h3><span class="dot"></span>Real geometry</h3>
+          <p>Structures are the actual 3D conformers from <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubChem</a>, rendered with 3Dmol.js — not sketches. Drag, zoom, highlight the atoms that change.</p>
+        </div>
+        <div class="m-item">
+          <h3><span class="dot"></span>Fact-checked</h3>
+          <p>Every claim is cross-checked against the primary literature; references carry resolvable DOIs and honest open-vs-subscription labels.</p>
+        </div>
+        <div class="m-item">
+          <h3><span class="dot"></span>The real procedure</h3>
+          <p>The actual lab handout, step by step, with the mechanism and a live, limiting-reagent-aware yield calculator.</p>
+        </div>
+        <div class="m-item">
+          <h3><span class="dot"></span>Open &amp; reusable</h3>
+          <p>MIT-licensed, structures public-domain. New labs start from a public <a href="https://github.com/orgolabs/lab-playbook" target="_blank" rel="noopener">template</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span class="f-brand">orgo<span>labs</span></span>
+      <nav>
+        <a href="https://orgolabs.github.io/camphor-reduction/">Camphor</a>
+        <a href="https://orgolabs.github.io/aspirin-synthesis/">Aspirin</a>
+        <a href="https://github.com/orgolabs/lab-playbook" target="_blank" rel="noopener">Playbook</a>
+        <a href="https://github.com/orgolabs" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <p class="fine">Open educational resource · content &amp; code MIT-licensed · molecular data from PubChem (public domain). Not a substitute for a supervised laboratory SOP.</p>
+    </div>
+  </footer>
+</body>
+</html>
